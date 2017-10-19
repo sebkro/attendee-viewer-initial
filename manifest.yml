@@ -1,0 +1,10 @@
+---
+applications:
+- name: attendee-viewer
+  memory: 1G
+  instances: 1
+  buildpack: java_buildpack
+  path: ./build/libs/cf-attendee-viewer-0.0.1-SNAPSHOT.jar
+  random-route: true
+  services:
+   - configserver
